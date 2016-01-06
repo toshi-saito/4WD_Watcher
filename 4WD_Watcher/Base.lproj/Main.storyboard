@@ -1,25 +1,251 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NEL-5s-QTi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Let's go Digital Regular.ttf">
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+            <string>LetsgoDigital-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="apc-Pj-F2c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NEL-5s-QTi" customClass="ViewController" customModule="_WD_Watcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="cuQ-5J-am9"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1s-91-U1C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="MpG-HK-DBB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connectiong..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-ye-30N">
+                                <rect key="frame" x="48" y="33" width="101" height="17"/>
+                                <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJY-bd-I0e">
+                                <rect key="frame" x="528" y="20" width="52" height="30"/>
+                                <state key="normal" title="ReScan"/>
+                                <connections>
+                                    <action selector="reScan:" destination="NEL-5s-QTi" eventType="touchUpInside" id="xQS-gt-xvX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLn-hu-Q07">
+                                <rect key="frame" x="0.0" y="50" width="600" height="559"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-Q6-JuJ">
+                                        <rect key="frame" x="180" y="105" width="240" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="6VM-6e-ceR"/>
+                                            <constraint firstAttribute="height" constant="350" id="TXw-dr-obc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmw-cz-PGb">
+                                        <rect key="frame" x="249" y="52" width="103" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ic3-CN-oSk"/>
+                                            <constraint firstAttribute="width" constant="140" id="MLi-bl-QEO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ic3-CN-oSk"/>
+                                                <exclude reference="MLi-bl-QEO"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtJ-L9-QsR">
+                                        <rect key="frame" x="451" y="86" width="35" height="17"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-1d-jRk">
+                                        <rect key="frame" x="360" y="284" width="9" height="17"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUT-Hy-0tm">
+                                        <rect key="frame" x="360" y="87" width="9" height="17"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO0-nD-o86">
+                                        <rect key="frame" x="360" y="483" width="9" height="17"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMI-71-Kt1">
+                                        <rect key="frame" x="249" y="250" width="103" height="60"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDL-rL-kwd">
+                                        <rect key="frame" x="249" y="448" width="103" height="60"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;&gt;&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4e-Yn-raA">
+                                        <rect key="frame" x="377" y="250" width="65" height="60"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9K-qr-Gwj">
+                                        <rect key="frame" x="158" y="250" width="65" height="60"/>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2e-JW-mgF">
+                                        <rect key="frame" x="384" y="73" width="67" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Uzj-ul-FQn"/>
+                                            <constraint firstAttribute="width" constant="80" id="lMj-cn-9xC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Uzj-ul-FQn"/>
+                                                <exclude reference="lMj-cn-9xC"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BtJ-L9-QsR" firstAttribute="leading" secondItem="u2e-JW-mgF" secondAttribute="trailing" id="19W-5k-re7"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="baseline" secondItem="Qmw-cz-PGb" secondAttribute="baseline" id="1p6-jv-wD9"/>
+                                    <constraint firstItem="lO0-nD-o86" firstAttribute="leading" secondItem="pDL-rL-kwd" secondAttribute="trailing" constant="8" id="3nW-fG-tcd"/>
+                                    <constraint firstItem="Qmw-cz-PGb" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" id="4mv-C9-wt8"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="top" secondItem="u2e-JW-mgF" secondAttribute="bottom" constant="2" id="5g3-ay-Yja"/>
+                                    <constraint firstItem="u2e-JW-mgF" firstAttribute="top" secondItem="Qmw-cz-PGb" secondAttribute="top" constant="20" id="A44-OJ-kpr"/>
+                                    <constraint firstItem="BtJ-L9-QsR" firstAttribute="leading" secondItem="Qmw-cz-PGb" secondAttribute="trailing" constant="130" id="DE8-To-iaf"/>
+                                    <constraint firstItem="NMI-71-Kt1" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" id="Fhv-VI-nUs"/>
+                                    <constraint firstItem="cdJ-1d-jRk" firstAttribute="leading" secondItem="NMI-71-Kt1" secondAttribute="trailing" constant="8" id="GSq-EG-u2Z"/>
+                                    <constraint firstItem="cdJ-1d-jRk" firstAttribute="top" secondItem="CUT-Hy-0tm" secondAttribute="bottom" constant="180" id="JIN-MW-jjr"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" id="KCL-4J-vw0"/>
+                                    <constraint firstItem="d4e-Yn-raA" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" constant="110" id="LHl-ro-Bll"/>
+                                    <constraint firstItem="u2e-JW-mgF" firstAttribute="top" secondItem="iLn-hu-Q07" secondAttribute="top" constant="55" id="LYS-fc-yFE"/>
+                                    <constraint firstItem="lO0-nD-o86" firstAttribute="top" secondItem="UpJ-Q6-JuJ" secondAttribute="bottom" constant="28" id="LcC-3L-Irf"/>
+                                    <constraint firstItem="u2e-JW-mgF" firstAttribute="leading" secondItem="Qmw-cz-PGb" secondAttribute="trailing" constant="23" id="MCH-Js-xTi"/>
+                                    <constraint firstItem="BtJ-L9-QsR" firstAttribute="leading" secondItem="u2e-JW-mgF" secondAttribute="trailing" id="Q1L-Yd-pg3"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="top" secondItem="CUT-Hy-0tm" secondAttribute="bottom" id="QGd-7r-bTX"/>
+                                    <constraint firstItem="d4e-Yn-raA" firstAttribute="centerY" secondItem="iLn-hu-Q07" secondAttribute="centerY" id="Qyu-sM-Rns"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="top" secondItem="Qmw-cz-PGb" secondAttribute="bottom" constant="6" id="RzU-ia-c1o"/>
+                                    <constraint firstItem="pDL-rL-kwd" firstAttribute="top" secondItem="NMI-71-Kt1" secondAttribute="bottom" constant="138" id="SQU-AU-eMU"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="leading" secondItem="Qmw-cz-PGb" secondAttribute="trailing" constant="8" id="Ux3-Bk-C5S"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="bottom" secondItem="Qmw-cz-PGb" secondAttribute="bottom" id="VaD-ru-EYY"/>
+                                    <constraint firstItem="BtJ-L9-QsR" firstAttribute="bottom" secondItem="u2e-JW-mgF" secondAttribute="bottom" constant="-7" id="XST-Ah-Dxi"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="leading" secondItem="Qmw-cz-PGb" secondAttribute="trailing" constant="8" id="YYR-dv-5R1"/>
+                                    <constraint firstItem="u2e-JW-mgF" firstAttribute="leading" secondItem="CUT-Hy-0tm" secondAttribute="trailing" constant="15" id="a4H-Sd-Fcv"/>
+                                    <constraint firstItem="Qmw-cz-PGb" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" id="azJ-78-aRD"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="top" secondItem="Qmw-cz-PGb" secondAttribute="top" id="bPQ-KA-bMc"/>
+                                    <constraint firstItem="NMI-71-Kt1" firstAttribute="centerY" secondItem="iLn-hu-Q07" secondAttribute="centerY" id="ePI-qd-zVt"/>
+                                    <constraint firstItem="BtJ-L9-QsR" firstAttribute="bottom" secondItem="u2e-JW-mgF" secondAttribute="bottom" id="hoG-0K-qj4"/>
+                                    <constraint firstItem="cdJ-1d-jRk" firstAttribute="centerY" secondItem="iLn-hu-Q07" secondAttribute="centerY" constant="13" id="hxT-iF-W8J"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="trailing" secondItem="UpJ-Q6-JuJ" secondAttribute="trailing" constant="-50" id="kmo-eS-Vej"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="leading" secondItem="Qmw-cz-PGb" secondAttribute="trailing" constant="8" id="lKv-Dr-wZt"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="top" secondItem="BtJ-L9-QsR" secondAttribute="bottom" constant="6" id="lQm-86-8jH"/>
+                                    <constraint firstItem="w9K-qr-Gwj" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" constant="-110" id="pQc-Sb-czr"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" constant="65" id="qy4-wn-eJS"/>
+                                    <constraint firstItem="NMI-71-Kt1" firstAttribute="top" secondItem="Qmw-cz-PGb" secondAttribute="bottom" constant="138" id="rVB-GQ-WbN"/>
+                                    <constraint firstItem="w9K-qr-Gwj" firstAttribute="centerY" secondItem="iLn-hu-Q07" secondAttribute="centerY" id="rjk-sj-XZN"/>
+                                    <constraint firstItem="pDL-rL-kwd" firstAttribute="centerX" secondItem="iLn-hu-Q07" secondAttribute="centerX" id="vYL-xA-hwA"/>
+                                    <constraint firstItem="CUT-Hy-0tm" firstAttribute="bottom" secondItem="Qmw-cz-PGb" secondAttribute="bottom" id="wCQ-gc-jkU"/>
+                                    <constraint firstItem="UpJ-Q6-JuJ" firstAttribute="centerY" secondItem="iLn-hu-Q07" secondAttribute="centerY" id="xXs-uZ-7jc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QGd-7r-bTX"/>
+                                        <exclude reference="RzU-ia-c1o"/>
+                                        <exclude reference="lQm-86-8jH"/>
+                                        <exclude reference="azJ-78-aRD"/>
+                                        <exclude reference="1p6-jv-wD9"/>
+                                        <exclude reference="Ux3-Bk-C5S"/>
+                                        <exclude reference="VaD-ru-EYY"/>
+                                        <exclude reference="bPQ-KA-bMc"/>
+                                        <exclude reference="kmo-eS-Vej"/>
+                                        <exclude reference="lKv-Dr-wZt"/>
+                                        <exclude reference="qy4-wn-eJS"/>
+                                        <exclude reference="wCQ-gc-jkU"/>
+                                        <exclude reference="A44-OJ-kpr"/>
+                                        <exclude reference="LYS-fc-yFE"/>
+                                        <exclude reference="MCH-Js-xTi"/>
+                                        <exclude reference="19W-5k-re7"/>
+                                        <exclude reference="DE8-To-iaf"/>
+                                        <exclude reference="XST-Ah-Dxi"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ods-h9-x7I">
+                                <rect key="frame" x="20" y="28" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GJY-bd-I0e" secondAttribute="trailing" id="0HP-k4-Q7h"/>
+                            <constraint firstItem="iLn-hu-Q07" firstAttribute="top" secondItem="GJY-bd-I0e" secondAttribute="bottom" id="66V-I4-GS6"/>
+                            <constraint firstItem="Ods-h9-x7I" firstAttribute="leading" secondItem="MpG-HK-DBB" secondAttribute="leadingMargin" id="6IV-nB-joH"/>
+                            <constraint firstItem="vjS-ye-30N" firstAttribute="leading" secondItem="Ods-h9-x7I" secondAttribute="trailing" constant="8" id="BKS-cD-2It"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iLn-hu-Q07" secondAttribute="trailing" constant="-20" id="CR6-71-oqf"/>
+                            <constraint firstItem="iLn-hu-Q07" firstAttribute="leading" secondItem="MpG-HK-DBB" secondAttribute="leadingMargin" constant="-20" id="Cqh-Hi-qgL"/>
+                            <constraint firstItem="vjS-ye-30N" firstAttribute="top" secondItem="cuQ-5J-am9" secondAttribute="bottom" id="Ko0-Yr-rI7"/>
+                            <constraint firstItem="iLn-hu-Q07" firstAttribute="top" secondItem="vjS-ye-30N" secondAttribute="bottom" id="TkT-QU-oAH"/>
+                            <constraint firstItem="vjS-ye-30N" firstAttribute="top" secondItem="cuQ-5J-am9" secondAttribute="bottom" constant="1" id="Zgx-Mn-vXF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iLn-hu-Q07" secondAttribute="bottom" constant="-9" id="ppQ-Ci-18j"/>
+                            <constraint firstItem="Ods-h9-x7I" firstAttribute="top" secondItem="cuQ-5J-am9" secondAttribute="bottom" constant="8" id="qGX-0N-34C"/>
+                            <constraint firstItem="GJY-bd-I0e" firstAttribute="top" secondItem="cuQ-5J-am9" secondAttribute="bottom" id="tbn-zm-tse"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ko0-Yr-rI7"/>
+                                <exclude reference="Zgx-Mn-vXF"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="Ods-h9-x7I" id="WG4-MM-bPG"/>
+                        <outlet property="leftArrow" destination="w9K-qr-Gwj" id="bif-rY-Taw"/>
+                        <outlet property="rightArrow" destination="d4e-Yn-raA" id="CJo-Vk-QgB"/>
+                        <outlet property="speedLabel" destination="u2e-JW-mgF" id="6mO-OH-NEZ"/>
+                        <outlet property="statusLabel" destination="vjS-ye-30N" id="EN0-xt-gPf"/>
+                        <outlet property="xLabel" destination="Qmw-cz-PGb" id="pEX-MA-vQ9"/>
+                        <outlet property="yLabel" destination="NMI-71-Kt1" id="O1N-gq-aIg"/>
+                        <outlet property="zLabel" destination="pDL-rL-kwd" id="LuH-gi-MYz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWl-Xp-si4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="872" y="227"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="745" height="1053"/>
+    </resources>
 </document>

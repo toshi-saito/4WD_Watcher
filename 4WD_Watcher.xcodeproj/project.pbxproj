@@ -12,6 +12,7 @@
 		F4F9E01D1C2CF7240006D69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F9E01B1C2CF7240006D69F /* Main.storyboard */; };
 		F4F9E01F1C2CF7240006D69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F9E01E1C2CF7240006D69F /* Assets.xcassets */; };
 		F4F9E0221C2CF7240006D69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F9E0201C2CF7240006D69F /* LaunchScreen.storyboard */; };
+		F4F9E02A1C33FCE50006D69F /* Let's go Digital Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4F9E0291C33FCE50006D69F /* Let's go Digital Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F4F9E01E1C2CF7240006D69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F9E0211C2CF7240006D69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F9E0231C2CF7240006D69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F9E0291C33FCE50006D69F /* Let's go Digital Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let's go Digital Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F4F9E0161C2CF7240006D69F /* 4WD_Watcher */ = {
 			isa = PBXGroup;
 			children = (
+				F4F9E0291C33FCE50006D69F /* Let's go Digital Regular.ttf */,
 				F4F9E0171C2CF7240006D69F /* AppDelegate.swift */,
 				F4F9E0191C2CF7240006D69F /* ViewController.swift */,
 				F4F9E01B1C2CF7240006D69F /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F9E0221C2CF7240006D69F /* LaunchScreen.storyboard in Resources */,
+				F4F9E02A1C33FCE50006D69F /* Let's go Digital Regular.ttf in Resources */,
 				F4F9E01F1C2CF7240006D69F /* Assets.xcassets in Resources */,
 				F4F9E01D1C2CF7240006D69F /* Main.storyboard in Resources */,
 			);
